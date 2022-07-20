@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Flipkart get product details">
+
+  <test thread-count="5" parallel="tests" name="Chrome - GetProductDetails">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.browserStack.flipkart.Tests.GetProductDetailsTests"/>
+    </classes>
+  </test> <!-- ProductDetails -->
+  
+  <!-- 
+  <test thread-count="5" parallel="tests" name="Firefox - GetProductDetails">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="com.browserStack.flipkart.Tests.GetProductDetailsTests"/>
+    </classes>
+  </test>
+  --><!-- ProductDetails -->
+  
+</suite> <!-- Flipkart get product details -->
